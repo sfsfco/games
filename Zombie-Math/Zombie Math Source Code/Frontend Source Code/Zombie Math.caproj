@@ -1,0 +1,1425 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Zombie Math</name>
+    <description>Solve Math Problems And Score High! Avoid The Enemy And Collect Powerups</description>
+    <version>1.0.0.0</version>
+    <author>Hamza Wasim</author>
+    <author-email>hi@hamzawasim.net</author-email>
+    <author-website>https://hamzawasim.net</author-website>
+    <app-id>com.hamzawasim.zombiemath</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>27500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1920</width>
+        <height>1080</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Main Menu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Sprite" sid="160914615482093">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="435298964396249">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="115659037260875" speed="5">
+                    <frame duration="1" hotspotX="0.579525" hotspotY="0.467836" original-source="C:\Users\talha\Downloads\coollogo_com-9395818.png">
+                        <collision-poly>
+                            <point x="0.0158674" y="0" />
+                            <point x="0.976234" y="0" />
+                            <point x="0.985957" y="0.830572" />
+                            <point x="0.956789" y="1" />
+                            <point x="0.0331519" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="699596223923517">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="955751523885488" speed="5">
+                    <frame duration="1" hotspotX="0.50411" hotspotY="0.472222" original-source="C:\Users\talha\Pictures\ssxdf.png">
+                        <collision-poly>
+                            <point x="0.00821914" y="0.754689" />
+                            <point x="0.0109589" y="0.0166666" />
+                            <point x="0.986301" y="0.0222222" />
+                            <point x="0.989041" y="0.988888" />
+                            <point x="0.180219" y="0.983333" />
+                            <point x="0.0547946" y="0.961111" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.471154">
+                        <collision-poly>
+                            <point x="0.00871772" y="0.753084" />
+                            <point x="0.0114583" y="0.019428" />
+                            <point x="0.987103" y="0.0249506" />
+                            <point x="0.989843" y="0.985897" />
+                            <point x="0.180771" y="0.980375" />
+                            <point x="0.0553076" y="0.958284" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="697277867318183">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Sprite3" sid="454469593127276">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="329424503406598" speed="5">
+                    <frame duration="1" hotspotX="0.50411" hotspotY="0.522222" original-source="C:\Users\talha\Pictures\ssxdf.png">
+                        <collision-poly>
+                            <point x="0.00164285" y="0.423002" />
+                            <point x="0.0292253" y="0.00565303" />
+                            <point x="0.988305" y="0" />
+                            <point x="0.988343" y="0.938499" />
+                            <point x="0.887918" y="0.989181" />
+                            <point x="0.0910518" y="0.988499" />
+                            <point x="0.020821" y="0.910722" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504762" hotspotY="0.524038">
+                        <collision-poly>
+                            <point x="0.0105472" y="0.00950283" />
+                            <point x="0.494327" y="0.0216206" />
+                            <point x="0.995482" y="0.0209458" />
+                            <point x="0.9855" y="0.982427" />
+                            <point x="0.636307" y="0.989541" />
+                            <point x="0.0425683" y="0.982428" />
+                            <point x="0.00476193" y="0.703582" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="999357953178551">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="215090395276543" speed="5">
+                    <frame duration="1" hotspotX="0.50137" hotspotY="0.5" original-source="C:\Users\talha\Pictures\MOREGAMES.png">
+                        <collision-poly>
+                            <point x="0.0364583" y="0.0256411" />
+                            <point x="0.949653" y="0.0306879" />
+                            <point x="0.96007" y="0.926374" />
+                            <point x="0.0590278" y="0.909239" />
+                            <point x="0.0286458" y="0.661457" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502381" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0364583" y="0.0256411" />
+                            <point x="0.949653" y="0.0306879" />
+                            <point x="0.96007" y="0.926374" />
+                            <point x="0.0590278" y="0.909239" />
+                            <point x="0.0286458" y="0.661457" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="501126407215048">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="654279113725693" speed="5">
+                    <frame duration="1" hotspotX="0.488764" hotspotY="0.455556" original-source="C:\Users\talha\Downloads\freefantasygui\png\Button.png" />
+                    <frame duration="1" hotspotX="0.49" hotspotY="0.455" />
+                    <frame duration="1" hotspotX="0.488764" hotspotY="0.455556" original-source="C:\Users\talha\Pictures\ssxdff.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.50708" y="0.0106383" />
+                            <point x="1" y="0" />
+                            <point x="0.992804" y="0.507092" />
+                            <point x="1" y="1" />
+                            <point x="0.50708" y="0.989362" />
+                            <point x="0" y="1" />
+                            <point x="0.00696496" y="0.507092" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.49" hotspotY="0.455">
+                        <collision-poly>
+                            <point x="0.0933158" y="0.0638298" />
+                            <point x="0.50708" y="0.0106383" />
+                            <point x="0.917247" y="0.0673759" />
+                            <point x="0.992804" y="0.507092" />
+                            <point x="0.906453" y="0.939716" />
+                            <point x="0.50708" y="0.989362" />
+                            <point x="0.100512" y="0.946808" />
+                            <point x="0.00696496" y="0.507092" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="544718294209275">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="704730044565687" speed="5">
+                    <frame duration="1" hotspotX="1.19841" hotspotY="12.5628" original-source="C:\Users\talha\Downloads\freefantasygui\png\Button.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="891517883776537">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="bg" sid="867141166764575">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="866668193843985" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\talha\Downloads\linear blue purple gradient highlight dark blue magenta 1920x1080.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\talha\Downloads\gradient magenta linear red 1920x1080.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\talha\Downloads\467462b25b3f8ca5841959b8b20da26f.jpg">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\talha\Downloads\Soft-Blue-Nature-Purple-Pink-Leaf-Pattern-Android-wallpaper-.jpg">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="483932980515501">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="826147914521641">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="440978187156826" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50289" original-source="C:\Users\talha\Downloads\coollogo_com-14562533.png">
+                        <collision-poly>
+                            <point x="0.0234375" y="0.17341" />
+                            <point x="0.5" y="0.17341" />
+                            <point x="0.984375" y="0.115607" />
+                            <point x="0.970312" y="0.780347" />
+                            <point x="0.5" y="0.687861" />
+                            <point x="0.0265625" y="0.803468" />
+                            <point x="0.0140625" y="0.49711" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="362751933248568">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="121498103974049" speed="5">
+                    <frame duration="1" hotspotX="0.525" hotspotY="0.476868" original-source="C:\Users\talha\Pictures\SSC.png">
+                        <collision-poly>
+                            <point x="0.146429" y="0.024911" />
+                            <point x="0.989286" y="0.523132" />
+                            <point x="0.185714" y="0.985765" />
+                            <point x="0.00714286" y="0.523132" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.525806" hotspotY="0.474194">
+                        <collision-poly>
+                            <point x="0.146429" y="0.024911" />
+                            <point x="0.989286" y="0.523132" />
+                            <point x="0.185714" y="0.985765" />
+                            <point x="0.00714286" y="0.523132" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="986314004658927">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="374694854448822" speed="5">
+                    <frame duration="1" hotspotX="0.517857" hotspotY="0.487544" original-source="C:\Users\talha\Pictures\2.png">
+                        <collision-poly>
+                            <point x="0.132143" y="0.0284698" />
+                            <point x="0.989286" y="0.498221" />
+                            <point x="0.135714" y="0.967972" />
+                            <point x="0.00714286" y="0.498221" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.519355" hotspotY="0.487097">
+                        <collision-poly>
+                            <point x="0.132143" y="0.0284698" />
+                            <point x="0.989286" y="0.498221" />
+                            <point x="0.135714" y="0.967972" />
+                            <point x="0.00714286" y="0.498221" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite10" sid="923704782741848">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="778218822899336" speed="5">
+                    <frame duration="1" hotspotX="0.521429" hotspotY="0.47331" original-source="C:\Users\talha\Pictures\3.png">
+                        <collision-poly>
+                            <point x="0.222794" y="0" />
+                            <point x="1" y="0.497588" />
+                            <point x="0.230841" y="1" />
+                            <point x="0" y="0.497588" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.522581" hotspotY="0.474194">
+                        <collision-poly>
+                            <point x="0.222794" y="0" />
+                            <point x="1" y="0.497588" />
+                            <point x="0.230841" y="1" />
+                            <point x="0" y="0.497588" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite11" sid="377047472798004">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="983201178851481" speed="5">
+                    <frame duration="1" hotspotX="0.517857" hotspotY="0.501779" original-source="C:\Users\talha\Pictures\4.png">
+                        <collision-poly>
+                            <point x="0.132143" y="0.0284698" />
+                            <point x="0.514286" y="0.00711744" />
+                            <point x="0.885714" y="0.0427046" />
+                            <point x="0.989286" y="0.498221" />
+                            <point x="0.885714" y="0.957295" />
+                            <point x="0.514286" y="0.989324" />
+                            <point x="0.135714" y="0.967972" />
+                            <point x="0.00714286" y="0.498221" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.519355" hotspotY="0.503226">
+                        <collision-poly>
+                            <point x="0.132143" y="0.0284698" />
+                            <point x="0.514286" y="0.00711744" />
+                            <point x="0.885714" y="0.0427046" />
+                            <point x="0.989286" y="0.498221" />
+                            <point x="0.885714" y="0.957295" />
+                            <point x="0.514286" y="0.989324" />
+                            <point x="0.135714" y="0.967972" />
+                            <point x="0.00714286" y="0.498221" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite12" sid="641563828246991">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="604302778254159" speed="5">
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.501779" original-source="C:\Users\talha\Pictures\5.png">
+                        <collision-poly>
+                            <point x="0.0755486" y="0" />
+                            <point x="0.510919" y="0" />
+                            <point x="0.934081" y="0" />
+                            <point x="1" y="0.497588" />
+                            <point x="0.934081" y="1" />
+                            <point x="0.510919" y="1" />
+                            <point x="0.079617" y="1" />
+                            <point x="0" y="0.497588" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.512903" hotspotY="0.503226">
+                        <collision-poly>
+                            <point x="0.0755486" y="0" />
+                            <point x="0.510919" y="0" />
+                            <point x="0.934081" y="0" />
+                            <point x="1" y="0.497588" />
+                            <point x="0.934081" y="1" />
+                            <point x="0.510919" y="1" />
+                            <point x="0.079617" y="1" />
+                            <point x="0" y="0.497588" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite13" sid="201890222005079">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="282726747248701" speed="5">
+                    <frame duration="1" hotspotX="0.528571" hotspotY="0.501779" original-source="C:\Users\talha\Pictures\8.png">
+                        <collision-poly>
+                            <point x="0.0137696" y="0" />
+                            <point x="0.52533" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.49673" />
+                            <point x="1" y="1" />
+                            <point x="0.52533" y="1" />
+                            <point x="0.01855" y="1" />
+                            <point x="0" y="0.49673" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.529032" hotspotY="0.503226">
+                        <collision-poly>
+                            <point x="0.0137696" y="0" />
+                            <point x="0.52533" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.49673" />
+                            <point x="1" y="1" />
+                            <point x="0.52533" y="1" />
+                            <point x="0.01855" y="1" />
+                            <point x="0" y="0.49673" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite14" sid="594843303449893">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="489152505434224" speed="5">
+                    <frame duration="1" hotspotX="0.521429" hotspotY="0.501779" original-source="C:\Users\talha\Pictures\7.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.517872" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.495566" />
+                            <point x="1" y="1" />
+                            <point x="0.517872" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.495566" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.522581" hotspotY="0.503226">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.517872" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.495566" />
+                            <point x="1" y="1" />
+                            <point x="0.517872" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.495566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite15" sid="393429453354913">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="574541247270163" speed="5">
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.501779" original-source="C:\Users\talha\Pictures\88.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.511305" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.493988" />
+                            <point x="1" y="1" />
+                            <point x="0.511305" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.493988" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.512903" hotspotY="0.503226">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.511305" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.493988" />
+                            <point x="1" y="1" />
+                            <point x="0.511305" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.493988" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite16" sid="421179816341612">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="100673039116963">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="930117129318361" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.536765" original-source="C:\Users\talha\Downloads\coollogo_com-33492711.png">
+                        <collision-poly>
+                            <point x="0.026253" y="0.0661765" />
+                            <point x="0.498807" y="0.0955882" />
+                            <point x="0.97852" y="0.0294118" />
+                            <point x="0.955847" y="0.897059" />
+                            <point x="0.498807" y="0.845588" />
+                            <point x="0.0393795" y="0.919118" />
+                            <point x="0.0107399" y="0.529412" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite17" sid="942136454157624">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="227775978699190" speed="5">
+                    <frame duration="1" hotspotX="0.52963" hotspotY="0.45733" original-source="C:\Users\talha\Downloads\zombiefiles\png\male\Attack (1).png">
+                        <collision-poly>
+                            <point x="0.0925926" y="0.100656" />
+                            <point x="0.52963" y="0.0415755" />
+                            <point x="0.92963" y="0.122538" />
+                            <point x="0.87037" y="0.455142" />
+                            <point x="0.766667" y="0.693654" />
+                            <point x="0.52963" y="0.995624" />
+                            <point x="0.12963" y="0.789934" />
+                            <point x="0.0407407" y="0.455142" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite18" sid="178556847851616">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="765181282416674" speed="5">
+                    <frame duration="1" hotspotX="0.501574" hotspotY="0.620027" original-source="C:\Users\talha\Pictures\vvvvv.png">
+                        <collision-poly>
+                            <point x="0" y="0.166677" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0.157377" />
+                            <point x="1" y="0.954868" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="0.954868" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite19" sid="773981901978162">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="758114321007779" speed="5">
+                    <frame duration="1" hotspotX="0.481268" hotspotY="0.460194" original-source="C:\Users\talha\Downloads\zombiefiles\png\female\Attack (1).png">
+                        <collision-poly>
+                            <point x="0.714697" y="0.460194" />
+                            <point x="0.659942" y="0.634951" />
+                            <point x="0.481268" y="0.996117" />
+                            <point x="0.184438" y="0.712621" />
+                            <point x="0.0144092" y="0.460194" />
+                            <point x="0.126801" y="0.168932" />
+                            <point x="0.481268" y="0.132039" />
+                            <point x="0.838617" y="0.165049" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Browser" sid="174541805758147">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Sprite20" sid="890527213113250">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="478546914464176" speed="5">
+                    <frame duration="1" hotspotX="0.44382" hotspotY="0.461111" original-source="C:\Users\talha\Downloads\freefantasygui\png\Button.png" />
+                    <frame duration="1" hotspotX="0.445" hotspotY="0.46" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite21" sid="761674512936517">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="264924831825394">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="816762368092571" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50289" original-source="C:\Users\talha\Downloads\coollogo_com-5956548.png">
+                        <collision-poly>
+                            <point x="0.0234375" y="0.17341" />
+                            <point x="0.5" y="0.17341" />
+                            <point x="0.984375" y="0.115607" />
+                            <point x="0.970312" y="0.780347" />
+                            <point x="0.5" y="0.687861" />
+                            <point x="0.0265625" y="0.803468" />
+                            <point x="0.0140625" y="0.49711" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="103367307213156">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="782014005235102">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="bg2" sid="963639834153104">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="635747002588913" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\talha\Downloads\linear blue purple gradient highlight dark blue magenta 1920x1080.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\talha\Downloads\gradient magenta linear red 1920x1080.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\talha\Downloads\467462b25b3f8ca5841959b8b20da26f.jpg">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\talha\Downloads\Soft-Blue-Nature-Purple-Pink-Leaf-Pattern-Android-wallpaper-.jpg">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text3" sid="656555087854402">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text4" sid="535410933800468">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text5" sid="140999136384141">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text6" sid="327930332932331">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text7" sid="902005107931654">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text8" sid="633147113053575">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text9" sid="539706217604690">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Player" sid="914978343640602">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="813141682212617">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="838576604573166">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="496865860019307">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="10" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="969937340102136" speed="10">
+                    <frame duration="1" hotspotX="0.549296" hotspotY="0.41087" original-source="C:\Users\talha\Downloads\zombiefiles\png\male\Walk (1).png">
+                        <collision-poly>
+                            <point x="0.15493" y="0.0961754" />
+                            <point x="0.548383" y="0.0565217" />
+                            <point x="0.971831" y="0.16087" />
+                            <point x="0.915493" y="0.396127" />
+                            <point x="0.767606" y="0.52174" />
+                            <point x="0.745566" y="0.686957" />
+                            <point x="0.119718" y="1" />
+                            <point x="0.0528169" y="0.69589" />
+                            <point x="0.056338" y="0.413519" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.565079" hotspotY="0.39916" original-source="C:\Users\talha\Downloads\zombiefiles\png\male\Walk (2).png">
+                        <collision-poly>
+                            <point x="0.253968" y="0.0504202" />
+                            <point x="0.815873" y="0.0630252" />
+                            <point x="0.949206" y="0.187376" />
+                            <point x="0.91746" y="0.340336" />
+                            <point x="0.765079" y="0.630252" />
+                            <point x="0.699494" y="0.722688" />
+                            <point x="0.330159" y="0.995798" />
+                            <point x="0.184127" y="0.644908" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.589286" hotspotY="0.4" original-source="C:\Users\talha\Downloads\zombiefiles\png\male\Walk (3).png">
+                        <collision-poly>
+                            <point x="0.315476" y="0.0757895" />
+                            <point x="0.797619" y="0.0757895" />
+                            <point x="0.916667" y="0.124571" />
+                            <point x="0.916667" y="0.298548" />
+                            <point x="0.892857" y="0.439354" />
+                            <point x="0.67262" y="0.962105" />
+                            <point x="0.0714286" y="0.928421" />
+                            <point x="0.172619" y="0.408022" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.59403" hotspotY="0.405117" original-source="C:\Users\talha\Downloads\zombiefiles\png\male\Walk (4).png">
+                        <collision-poly>
+                            <point x="0.292537" y="0.0852878" />
+                            <point x="0.700912" y="0.0511727" />
+                            <point x="0.952239" y="0.167031" />
+                            <point x="0.910448" y="0.322514" />
+                            <point x="0.755225" y="0.923241" />
+                            <point x="0.587479" y="0.953092" />
+                            <point x="0.0895522" y="0.927505" />
+                            <point x="0.179104" y="0.369422" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.590062" hotspotY="0.406852" original-source="C:\Users\talha\Downloads\zombiefiles\png\male\Walk (5).png">
+                        <collision-poly>
+                            <point x="0.285714" y="0.0899358" />
+                            <point x="0.658407" y="0.0556745" />
+                            <point x="0.944099" y="0.158458" />
+                            <point x="1" y="0.206323" />
+                            <point x="0.689441" y="0.965739" />
+                            <point x="0.124224" y="0.93576" />
+                            <point x="0.21118" y="0.625807" />
+                            <point x="0.15528" y="0.309107" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.578778" hotspotY="0.41087" original-source="C:\Users\talha\Downloads\zombiefiles\png\male\Walk (6).png">
+                        <collision-poly>
+                            <point x="0.276527" y="0.0869565" />
+                            <point x="0.57352" y="0.0608696" />
+                            <point x="0.858521" y="0.0869565" />
+                            <point x="0.92283" y="0.409176" />
+                            <point x="0.762058" y="0.686957" />
+                            <point x="0.605674" y="0.973913" />
+                            <point x="0.102894" y="0.917391" />
+                            <point x="0.115756" y="0.378742" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52381" hotspotY="0.396226" original-source="C:\Users\talha\Downloads\zombiefiles\png\male\Walk (7).png">
+                        <collision-poly>
+                            <point x="0.212454" y="0.0922432" />
+                            <point x="0.397035" y="0.0628931" />
+                            <point x="0.846154" y="0.0880503" />
+                            <point x="0.882784" y="0.327613" />
+                            <point x="0.692308" y="0.647799" />
+                            <point x="0.397035" y="0.997904" />
+                            <point x="0.161172" y="0.9413" />
+                            <point x="0.029304" y="0.340192" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.530466" hotspotY="0.394572" original-source="C:\Users\talha\Downloads\zombiefiles\png\male\Walk (8).png">
+                        <collision-poly>
+                            <point x="0.143369" y="0.0793319" />
+                            <point x="0.520612" y="0.0709812" />
+                            <point x="0.763441" y="0.091858" />
+                            <point x="0.885304" y="0.404113" />
+                            <point x="0.698925" y="0.640919" />
+                            <point x="0.513444" y="0.920668" />
+                            <point x="0.09319" y="0.916493" />
+                            <point x="0.0501792" y="0.429165" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.541667" hotspotY="0.399577" original-source="C:\Users\talha\Downloads\zombiefiles\png\male\Walk (9).png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.10148" />
+                            <point x="0.56897" y="0.0803383" />
+                            <point x="0.895834" y="0.143763" />
+                            <point x="0.881945" y="0.335944" />
+                            <point x="0.708334" y="0.678647" />
+                            <point x="0.56897" y="0.915433" />
+                            <point x="0.145833" y="0.928118" />
+                            <point x="0.0972222" y="0.373999" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.551237" hotspotY="0.402985" original-source="C:\Users\talha\Downloads\zombiefiles\png\male\Walk (10).png">
+                        <collision-poly>
+                            <point x="0.169611" y="0.10661" />
+                            <point x="0.54722" y="0.0639659" />
+                            <point x="0.85159" y="0.10661" />
+                            <point x="0.893993" y="0.360131" />
+                            <point x="0.70318" y="0.697228" />
+                            <point x="0.278669" y="0.940298" />
+                            <point x="0.0636042" y="0.867804" />
+                            <point x="0.106007" y="0.398511" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="225028274895902">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\talha\Downloads\ghost-tile.jpg" />
+        </object-type>
+        <object-type name="Sprite22" sid="348190964093975">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="266881918312412" speed="5">
+                    <frame duration="1" hotspotX="0.498636" hotspotY="0.5" original-source="C:\Users\talha\Pictures\kkiks.png">
+                        <collision-poly>
+                            <point x="0.00919529" y="0.0181567" />
+                            <point x="0.982243" y="0.0397598" />
+                            <point x="0.968435" y="0.903884" />
+                            <point x="0.498989" y="0.94949" />
+                            <point x="0.026636" y="0.913485" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Question" sid="946816581798328">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text11" sid="613276316714008">
+            <plugin id="Text" />
+        </object-type>
+        <object-type global="1" name="Dictionary" sid="988098287624946">
+            <plugin id="Dictionary" />
+        </object-type>
+        <object-type name="AJAX" sid="593971452742514">
+            <plugin id="AJAX" />
+        </object-type>
+        <object-type name="Enemy" sid="809823933053612">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="135024569615469">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="857188012214986">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="9" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="320106975898539" speed="9">
+                    <frame duration="1" hotspotX="0.473529" hotspotY="0.469349" original-source="C:\Users\talha\Downloads\zombiefiles\png\female\Walk (1).png">
+                        <collision-poly>
+                            <point x="0.117647" y="0.0727969" />
+                            <point x="0.347059" y="0.0191571" />
+                            <point x="0.92353" y="0.218391" />
+                            <point x="0.847059" y="0.716475" />
+                            <point x="0.463235" y="0.814176" />
+                            <point x="0.455882" y="1" />
+                            <point x="0.188235" y="0.984674" />
+                            <point x="0.270588" y="0.752874" />
+                            <point x="0.270588" y="0.454023" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.479412" hotspotY="0.462825" original-source="C:\Users\talha\Downloads\zombiefiles\png\female\Walk (2).png">
+                        <collision-poly>
+                            <point x="0.147059" y="0.0669145" />
+                            <point x="0.641177" y="0.163569" />
+                            <point x="0.947059" y="0.271375" />
+                            <point x="0.935294" y="0.518587" />
+                            <point x="0.723529" y="0.70632" />
+                            <point x="0.547059" y="0.951673" />
+                            <point x="0.205882" y="0.981413" />
+                            <point x="0.317647" y="0.615242" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.483776" hotspotY="0.469388" original-source="C:\Users\talha\Downloads\zombiefiles\png\female\Walk (3).png">
+                        <collision-poly>
+                            <point x="0.112094" y="0.0556586" />
+                            <point x="0.663716" y="0.166976" />
+                            <point x="0.958702" y="0.304267" />
+                            <point x="0.923304" y="0.517625" />
+                            <point x="0.764012" y="0.717996" />
+                            <point x="0.696165" y="0.959184" />
+                            <point x="0.188791" y="0.96846" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.483776" hotspotY="0.474672" original-source="C:\Users\talha\Downloads\zombiefiles\png\female\Walk (4).png">
+                        <collision-poly>
+                            <point x="0.041298" y="0.150094" />
+                            <point x="0.333333" y="0.0187617" />
+                            <point x="0.923304" y="0.232645" />
+                            <point x="0.746312" y="0.93621" />
+                            <point x="0.448378" y="1" />
+                            <point x="0.0412979" y="0.868668" />
+                            <point x="0.294985" y="0.716698" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.479412" hotspotY="0.469811" original-source="C:\Users\talha\Downloads\zombiefiles\png\female\Walk (5).png">
+                        <collision-poly>
+                            <point x="0.2" y="0.318868" />
+                            <point x="0.141176" y="0.0566038" />
+                            <point x="0.870588" y="0.184906" />
+                            <point x="0.941176" y="0.488679" />
+                            <point x="0.758824" y="0.739623" />
+                            <point x="0.529412" y="0.967924" />
+                            <point x="0.164706" y="0.943396" />
+                            <point x="0.294118" y="0.771698" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.482353" hotspotY="0.474187" original-source="C:\Users\talha\Downloads\zombiefiles\png\female\Walk (6).png">
+                        <collision-poly>
+                            <point x="0.141176" y="0.0824347" />
+                            <point x="0.611764" y="0.172084" />
+                            <point x="0.964706" y="0.294455" />
+                            <point x="0.9" y="0.427555" />
+                            <point x="0.729411" y="0.720841" />
+                            <point x="0.659533" y="0.977055" />
+                            <point x="0.182353" y="0.889101" />
+                            <point x="0.235294" y="0.525106" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.488235" hotspotY="0.460111" original-source="C:\Users\talha\Downloads\zombiefiles\png\female\Walk (7).png">
+                        <collision-poly>
+                            <point x="0.235294" y="0.375361" />
+                            <point x="0.164706" y="0.0593692" />
+                            <point x="0.917647" y="0.200371" />
+                            <point x="0.929412" y="0.41313" />
+                            <point x="0.764706" y="0.730984" />
+                            <point x="0.479876" y="0.985158" />
+                            <point x="0.205882" y="0.90167" />
+                            <point x="0.294118" y="0.7017" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.483776" hotspotY="0.466418" original-source="C:\Users\talha\Downloads\zombiefiles\png\female\Walk (9).png">
+                        <collision-poly>
+                            <point x="0.135693" y="0.0597015" />
+                            <point x="0.365782" y="0.0335821" />
+                            <point x="0.852507" y="0.201493" />
+                            <point x="0.935103" y="0.256085" />
+                            <point x="0.657817" y="0.932836" />
+                            <point x="0.20649" y="0.86194" />
+                            <point x="0.289086" y="0.753731" />
+                            <point x="0.218289" y="0.480609" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.482353" hotspotY="0.47081" original-source="C:\Users\talha\Downloads\zombiefiles\png\female\Walk (10).png">
+                        <collision-poly>
+                            <point x="0.135294" y="0.0677966" />
+                            <point x="0.311765" y="0.0188324" />
+                            <point x="0.811765" y="0.180791" />
+                            <point x="0.923529" y="0.23495" />
+                            <point x="0.891177" y="0.600526" />
+                            <point x="0.517646" y="0.951036" />
+                            <point x="0.188235" y="0.845574" />
+                            <point x="0.276471" y="0.691149" />
+                            <point x="0.261765" y="0.534878" />
+                            <point x="0.217647" y="0.295744" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite23" sid="195026703853473">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="762136229116740" speed="5">
+                    <frame duration="1" hotspotX="0.501383" hotspotY="0.467283" original-source="C:\Users\talha\Downloads\—Pngtree—glossy heart_3782767.png">
+                        <collision-poly>
+                            <point x="0.131397" y="0.0554273" />
+                            <point x="0.501383" y="0.193226" />
+                            <point x="0.870678" y="0.0561971" />
+                            <point x="0.926003" y="0.467283" />
+                            <point x="0.737206" y="0.729792" />
+                            <point x="0.501383" y="0.928406" />
+                            <point x="0.264869" y="0.730562" />
+                            <point x="0.0739972" y="0.467283" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite24" sid="193006987038534">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="128318797398436" speed="5">
+                    <frame duration="1" hotspotX="0.501383" hotspotY="0.467283" original-source="C:\Users\talha\Downloads\—Pngtree—glossy heart_3782767.png">
+                        <collision-poly>
+                            <point x="0.131397" y="0.0554273" />
+                            <point x="0.501383" y="0.193226" />
+                            <point x="0.870678" y="0.0561971" />
+                            <point x="0.926003" y="0.467283" />
+                            <point x="0.737206" y="0.729792" />
+                            <point x="0.501383" y="0.928406" />
+                            <point x="0.264869" y="0.730562" />
+                            <point x="0.0739972" y="0.467283" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite25" sid="495257502486967">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="959706148660663" speed="5">
+                    <frame duration="1" hotspotX="0.501383" hotspotY="0.467283" original-source="C:\Users\talha\Downloads\—Pngtree—glossy heart_3782767.png">
+                        <collision-poly>
+                            <point x="0.131397" y="0.0554273" />
+                            <point x="0.501383" y="0.193226" />
+                            <point x="0.870678" y="0.0561971" />
+                            <point x="0.926003" y="0.467283" />
+                            <point x="0.737206" y="0.729792" />
+                            <point x="0.501383" y="0.928406" />
+                            <point x="0.264869" y="0.730562" />
+                            <point x="0.0739972" y="0.467283" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite26" sid="489624935294033">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="974523247254898" speed="5">
+                    <frame duration="1" hotspotX="0.497423" hotspotY="0.5" original-source="C:\Users\talha\Pictures\gghb.png">
+                        <collision-poly>
+                            <point x="0.023952" y="0.0742188" />
+                            <point x="0.498109" y="0.0260171" />
+                            <point x="0.956635" y="0.12242" />
+                            <point x="0.95924" y="0.491966" />
+                            <point x="0.943608" y="0.829378" />
+                            <point x="0.498109" y="0.869546" />
+                            <point x="0.0421888" y="0.861512" />
+                            <point x="0.0109257" y="0.491966" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite27" sid="618588367548498">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="559026370167006" speed="5">
+                    <frame duration="1" hotspotX="0.444653" hotspotY="0.500967" original-source="C:\Users\talha\Pictures\dddfv.png">
+                        <collision-poly>
+                            <point x="0.0939681" y="0.499077" />
+                            <point x="0.189798" y="0.332103" />
+                            <point x="0.442442" y="0.136341" />
+                            <point x="0.982576" y="0.142098" />
+                            <point x="0.921593" y="0.499077" />
+                            <point x="0.76478" y="0.712113" />
+                            <point x="0.442442" y="0.844541" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text12" sid="231174377474818">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text13" sid="585216957406395">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite28" sid="373771336801412">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="168201055408323" speed="5">
+                    <frame duration="1" hotspotX="0.555347" hotspotY="0.499033" original-source="C:\Users\talha\Pictures\dddfv.png">
+                        <collision-poly>
+                            <point x="0.906032" y="0.500923" />
+                            <point x="0.810202" y="0.667897" />
+                            <point x="0.557558" y="0.863659" />
+                            <point x="0.017424" y="0.857902" />
+                            <point x="0.078407" y="0.500923" />
+                            <point x="0.23522" y="0.287887" />
+                            <point x="0.557558" y="0.155459" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite29" sid="495247399987175">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="160372592647922" speed="5">
+                    <frame duration="1" hotspotX="0.444653" hotspotY="0.500967" original-source="C:\Users\talha\Pictures\health.png">
+                        <collision-poly>
+                            <point x="0.0939681" y="0.499077" />
+                            <point x="0.189798" y="0.332103" />
+                            <point x="0.442442" y="0.136341" />
+                            <point x="0.982576" y="0.142098" />
+                            <point x="0.921593" y="0.499077" />
+                            <point x="0.76478" y="0.712113" />
+                            <point x="0.442442" y="0.844541" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite30" sid="830455912592629">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="328143120865223" speed="5">
+                    <frame duration="1" hotspotX="0.500938" hotspotY="0.500967" original-source="C:\Users\talha\Pictures\anser.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.506567" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.584139" />
+                            <point x="1" y="1" />
+                            <point x="0.393996" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.4294" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Correct" sid="145901031563755">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite31" sid="122868870481724">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="153203672112354" speed="5">
+                    <frame duration="1" hotspotX="0.500938" hotspotY="0.500967" original-source="C:\Users\talha\Pictures\anser.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.502814" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.475822" />
+                            <point x="1" y="1" />
+                            <point x="0.469043" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.50677" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Incorrect" sid="642209737236126">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite32" sid="159273191352435">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="809865939199607">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="224206770191055" speed="5">
+                    <frame duration="1" hotspotX="0.498172" hotspotY="0.608187" original-source="C:\Users\talha\Downloads\coollogo_com-2194423.png">
+                        <collision-poly>
+                            <point x="0.0216387" y="0" />
+                            <point x="0.976373" y="0" />
+                            <point x="0.986039" y="0.605322" />
+                            <point x="0.957042" y="1" />
+                            <point x="0.0388218" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite33" sid="526684267121988">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="970860198528163" speed="5">
+                    <frame duration="1" hotspotX="0.500994" hotspotY="0.5" original-source="C:\Users\talha\Pictures\dddccc.png">
+                        <collision-poly>
+                            <point x="0.990805" y="0.981843" />
+                            <point x="0.017757" y="0.96024" />
+                            <point x="0.031565" y="0.096116" />
+                            <point x="0.501011" y="0.05051" />
+                            <point x="0.973364" y="0.086515" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text14" sid="333699200107641">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Score" sid="557279103347233">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite34" sid="451992732685856">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="522912108576067">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="520471768257399" speed="5">
+                    <frame duration="1" hotspotX="0.496671" hotspotY="0.638554" original-source="C:\Users\talha\Downloads\coollogo_com-29637550.png">
+                        <collision-poly>
+                            <point x="0.0188716" y="0" />
+                            <point x="0.976306" y="0" />
+                            <point x="0.986" y="0.640034" />
+                            <point x="0.956921" y="1" />
+                            <point x="0.0361033" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite35" sid="521125870242628">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="379441079021414">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="349669162528429" speed="5">
+                    <frame duration="1" hotspotX="0.499121" hotspotY="0.55303" original-source="C:\Users\talha\Downloads\coollogo_com-87334069.png">
+                        <collision-poly>
+                            <point x="0.0611548" y="0.109848" />
+                            <point x="0.496702" y="0.0118093" />
+                            <point x="0.958865" y="0" />
+                            <point x="0.968544" y="0.53877" />
+                            <point x="0.939507" y="1" />
+                            <point x="0.496702" y="0.992201" />
+                            <point x="0.0732534" y="0.918672" />
+                            <point x="0.00792135" y="0.53877" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite36" sid="720337826689906">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="441715853403416">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="687052700225672" speed="5">
+                    <frame duration="1" hotspotX="0.496274" hotspotY="0.590909" original-source="C:\Users\talha\Downloads\coollogo_com-15298232.png">
+                        <collision-poly>
+                            <point x="0.0569573" y="0.0388252" />
+                            <point x="0.494452" y="0" />
+                            <point x="0.958681" y="0" />
+                            <point x="0.968403" y="0.574978" />
+                            <point x="0.939237" y="1" />
+                            <point x="0.494452" y="1" />
+                            <point x="0.06911" y="1" />
+                            <point x="0.00348583" y="0.574978" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="900476934519201">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Sprite37" sid="403921159848029">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="135272529562880">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="699966591382689" speed="5">
+                    <frame duration="1" hotspotX="0.496098" hotspotY="0.660606" original-source="C:\Users\talha\Downloads\coollogo_com-327581427.png">
+                        <collision-poly>
+                            <point x="0.0162328" y="0.0143053" />
+                            <point x="0.496312" y="0.0143053" />
+                            <point x="0.98426" y="0" />
+                            <point x="0.970093" y="1" />
+                            <point x="0.496312" y="1" />
+                            <point x="0.0193809" y="1" />
+                            <point x="0.00678869" y="0.649018" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text15" sid="493497891031462">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text16" sid="840734932401044">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text17" sid="294349011294385">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text18" sid="148583461972304">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite38" sid="513769532752657">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="110298093373543" speed="5">
+                    <frame duration="1" hotspotX="0.444653" hotspotY="0.500967" original-source="C:\Users\talha\Pictures\dddfv.png">
+                        <collision-poly>
+                            <point x="0.0939681" y="0.499077" />
+                            <point x="0.189798" y="0.332103" />
+                            <point x="0.442442" y="0.136341" />
+                            <point x="0.982576" y="0.142098" />
+                            <point x="0.921593" y="0.499077" />
+                            <point x="0.76478" y="0.712113" />
+                            <point x="0.442442" y="0.844541" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite39" sid="753989177919064">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="300537316030313" speed="5">
+                    <frame duration="1" hotspotX="0.555347" hotspotY="0.499033" original-source="C:\Users\talha\Pictures\dddfv.png">
+                        <collision-poly>
+                            <point x="0.906032" y="0.500923" />
+                            <point x="0.810202" y="0.667897" />
+                            <point x="0.557558" y="0.863659" />
+                            <point x="0.017424" y="0.857902" />
+                            <point x="0.078407" y="0.500923" />
+                            <point x="0.23522" y="0.287887" />
+                            <point x="0.557558" y="0.155459" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite40" sid="333176463030079">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="917687976553384" speed="5">
+                    <frame duration="1" hotspotX="0.444653" hotspotY="0.500967" original-source="C:\Users\talha\Pictures\health.png">
+                        <collision-poly>
+                            <point x="0.0939681" y="0.499077" />
+                            <point x="0.189798" y="0.332103" />
+                            <point x="0.442442" y="0.136341" />
+                            <point x="0.982576" y="0.142098" />
+                            <point x="0.921593" y="0.499077" />
+                            <point x="0.76478" y="0.712113" />
+                            <point x="0.442442" y="0.844541" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite41" sid="173766021086867">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="784188963080224" speed="5">
+                    <frame duration="1" hotspotX="0.523438" hotspotY="0.45641" original-source="C:\Users\talha\Pictures\SSSXD.png">
+                        <collision-poly>
+                            <point x="0.0384615" y="0.0782918" />
+                            <point x="0.5" y="0.00711744" />
+                            <point x="0.961538" y="0.0782918" />
+                            <point x="0.993007" y="0.498221" />
+                            <point x="0.961538" y="0.921708" />
+                            <point x="0.5" y="0.992883" />
+                            <point x="0.0384615" y="0.921708" />
+                            <point x="0.00699301" y="0.498221" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite42" sid="920046565661210">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="111666839873165" speed="5">
+                    <frame duration="1" hotspotX="0.476923" hotspotY="0.471795" original-source="C:\Users\talha\Downloads\freefantasygui\png\Button.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite43" sid="174798940364076">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="264410874223510" speed="5">
+                    <frame duration="1" hotspotX="0.502564" hotspotY="0.461538" original-source="C:\Users\talha\Downloads\freefantasygui\png\Button.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Main Menu.xml</layout>
+        <layout>Loading Layout.xml</layout>
+        <layout>Grade Selection.xml</layout>
+        <layout>Game Over.xml</layout>
+        <layout>Skill Selection.xml</layout>
+        <layout>Game Area.xml</layout>
+        <layout>How to play.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Main Menu Events.xml</event-sheet>
+        <event-sheet>Grade Selection Events.xml</event-sheet>
+        <event-sheet>How to play events.xml</event-sheet>
+        <event-sheet>Skill Selection Events.xml</event-sheet>
+        <event-sheet>Game Area Events.xml</event-sheet>
+        <event-sheet>Loading Layout Events.xml</event-sheet>
+        <event-sheet>Game Over Events.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="3" />
+        <global-instance type="Touch" uid="8">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Browser" uid="24" />
+        <global-instance type="AJAX" uid="50" />
+        <global-instance type="Audio" uid="73">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="Bleep-SoundBible.com-1927126940.m4a" />
+        <file name="Bleep-SoundBible.com-1927126940.ogg" />
+        <file name="True and False Sound Effects Correct and Wrong Sound Effect Doğru ve Yanlış Ses Efektleri (mp3cut.net).m4a" />
+        <file name="True and False Sound Effects Correct and Wrong Sound Effect Doğru ve Yanlış Ses Efektleri (mp3cut.net).ogg" />
+        <file name="PowerUp16.m4a" />
+        <file name="PowerUp16.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="Puzzle-Dreams (online-audio-converter.com).m4a" />
+        <file name="Puzzle-Dreams (online-audio-converter.com).ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file name="stylesheet.css" />
+        <file name="BerlinSansFB-Bold.woff" />
+        <file name="BerlinSansFB-Bold.woff2" />
+    </files-folder>
+</c2project>

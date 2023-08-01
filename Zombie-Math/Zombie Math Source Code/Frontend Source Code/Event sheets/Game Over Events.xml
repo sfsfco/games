@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game Over Events</name>
+    <events>
+        <include>Main Menu Events</include>
+        <event-block sid="667505102829987">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="709193277719502" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="451123949765714" type="Text17">
+                    <param id="0" name="Text">Score</param>
+                </action>
+                <action id="0" name="Set text" sid="858842844186914" type="Text18">
+                    <param id="0" name="Text">PowerUps</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="692747783217781">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="748092248317966" type="Mouse">
+                    <param id="0" name="Object">Sprite42</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="859382970949911" type="Sprite42">
+                    <param id="0" name="Scale">1.1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="925926441638363">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="218267082601384" type="Mouse">
+                    <param id="0" name="Object">Sprite43</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="790994509482589" type="Sprite43">
+                    <param id="0" name="Scale">1.1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="847212647677411">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="669940112445362" type="Mouse">
+                    <param id="0" name="Object">Sprite41</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="556275107199554" type="Sprite41">
+                    <param id="0" name="Scale">1.1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="248140834412685">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="768586993709750" type="Mouse">
+                    <param id="0" name="Object">Sprite42</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="108095152236299" type="Sprite42">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="551501748233031">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="226210079088774" type="Mouse">
+                    <param id="0" name="Object">Sprite43</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="462054657018831" type="Sprite43">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="943381779725770">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="327907761181066" type="Mouse">
+                    <param id="0" name="Object">Sprite41</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="698369673790031" type="Sprite41">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="615861123606106">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="371659050213772" type="Mouse">
+                    <param id="0" name="Object">Sprite20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="475097939362018" type="Sprite20">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="946334267095661">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="149110291108502" type="Mouse">
+                    <param id="0" name="Object">Sprite20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="308462912578299" type="Sprite20">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="241925316906824">
+            <conditions>
+                <condition id="3" name="On touched object" sid="290256997505706" type="Touch">
+                    <param id="0" name="Object">Sprite20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="578801048275194" type="System">
+                    <param id="0" name="Layout">Main Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="673735148183525">
+            <conditions>
+                <condition id="3" name="On touched object" sid="380605694045713" type="Touch">
+                    <param id="0" name="Object">Sprite42</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="352569015076892" type="Browser">
+                    <param id="0" name="URL">&quot;https://www.facebook.com/sharer/sharer.php?u=https://hamzawasim.net/zombiemath.php? score=&quot; &amp; Score</param>
+                    <param id="1" name="Tag">&quot;NewWindow&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="211981861614929">
+            <conditions>
+                <condition id="3" name="On touched object" sid="919679964896104" type="Touch">
+                    <param id="0" name="Object">Sprite43</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="243149953471090" type="Browser">
+                    <param id="0" name="URL">&quot;http://www.twitter.com/intent/tweet?source=webclient&amp;text=Playing this cool game! Try it out, my score is &quot; &amp; Score &amp; &quot; %23ZombieMath&quot;</param>
+                    <param id="1" name="Tag">&quot;NewWindow&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="463767527311344">
+            <conditions>
+                <condition id="3" name="On touched object" sid="115817359629453" type="Touch">
+                    <param id="0" name="Object">Sprite41</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="780339963898261" type="System">
+                    <param id="0" name="Variable">Answer</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="161324656424310" type="System">
+                    <param id="0" name="Variable">EnemyCount</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="549042715764840" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="609397165489311" type="System">
+                    <param id="0" name="Variable">PowerUps</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="699086192054997" type="System">
+                    <param id="0" name="Variable">Question</param>
+                    <param id="1" name="Value">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="769335054703684" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="198015488350569" type="System">
+                    <param id="0" name="Variable">Timer</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="458898119929617" type="System">
+                    <param id="0" name="Variable">PowerUps</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="963941444702949" type="System">
+                    <param id="0" name="Layout">Loading Layout</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

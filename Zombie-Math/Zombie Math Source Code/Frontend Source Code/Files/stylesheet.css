@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Berlin Sans FB';
+    src: url('berlinsansfb-bold.woff2') format('woff2'),
+        url('berlinsansfb-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

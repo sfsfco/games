@@ -1,0 +1,1040 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game Area Events</name>
+    <events>
+        <include>Main Menu Events</include>
+        <variable constant="0" name="PowerUps" sid="217644815356458" static="0" type="number">0</variable>
+        <variable constant="0" name="EnemyCount" sid="668699664859333" static="0" type="number">0</variable>
+        <variable constant="0" name="Score" sid="967359081964653" static="0" type="number">0</variable>
+        <variable constant="0" name="Timer" sid="503189242628869" static="0" type="number">0</variable>
+        <variable constant="0" name="Health" sid="262636098528458" static="0" type="number">3</variable>
+        <event-block sid="449904394391577">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="451373533047595" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="610397932144291" type="Question">
+                    <param id="0" name="Text">Question</param>
+                </action>
+                <action id="2" name="Stop" sid="910715145388665" type="Sprite20" />
+                <action id="2" name="Stop" sid="898617684147919" type="Player" />
+                <action id="4" name="Set animation" sid="308275688952359" type="Player">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="2" name="Stop" sid="307436572019015" type="Enemy" />
+                <action id="4" name="Set animation" sid="848039909744687" type="Enemy">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="504637103762531" type="Text13">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="440236864840496">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="860022800386441" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="999466356094741" type="Correct">
+                    <param id="0" name="Text">Answer</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="112816002561028" type="Player">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+                <action id="-16" name="Wait" sid="685613777883440" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="328708101808711" type="Enemy">
+                    <param id="0" name="X">Player.X</param>
+                    <param id="1" name="Y">Player.Y</param>
+                </action>
+                <action id="0" name="Set text" sid="192017193928253" type="Score">
+                    <param id="0" name="Text">Score</param>
+                </action>
+                <action id="-1" name="Set X" sid="928507639983582" type="Incorrect">
+                    <param id="0" name="X">Sprite31.X</param>
+                </action>
+                <action id="-2" name="Set Y" sid="146896849335958" type="Incorrect">
+                    <param id="0" name="Y">Sprite31.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="752272086859230">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="524116055003589" type="Touch">
+                    <param id="0" name="Object">TiledBackground</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="901513334205106" type="Player">
+                    <param id="0" name="X">Touch.X</param>
+                    <param id="1" name="Y">Touch.Y</param>
+                </action>
+                <action id="-16" name="Wait" sid="929254317370336" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="462532075617307" type="Enemy">
+                    <param id="0" name="X">Player.X</param>
+                    <param id="1" name="Y">Player.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="593638873793744">
+            <conditions>
+                <condition id="1" name="On any touch end" sid="136247616824238" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="843659033485902" type="Player">
+                    <param id="0" name="X">Player.X</param>
+                    <param id="1" name="Y">Player.Y</param>
+                </action>
+                <action id="-16" name="Wait" sid="484055439971451" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="933710506502872" type="Enemy">
+                    <param id="0" name="X">Player.X</param>
+                    <param id="1" name="Y">Player.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="882496130654111">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="183478140045440" type="Mouse">
+                    <param id="0" name="Object">Sprite20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="668574367473453" type="Sprite20">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="457342449769777">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="901521481769777" type="Mouse">
+                    <param id="0" name="Object">Sprite20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="498175557002517" type="Sprite20">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="170515199003604">
+            <conditions>
+                <condition id="3" name="On touched object" sid="450753702532713" type="Touch">
+                    <param id="0" name="Object">Sprite20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="302020782411016" type="System">
+                    <param id="0" name="Layout">Main Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="688740805040753">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="448859311680225" type="System">
+                    <param id="0" name="Interval (seconds)">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="186423689994784" type="System">
+                    <param id="0" name="Object to create">Sprite31</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">random(Player.X + 300,Player.X + 1200)</param>
+                    <param id="3" name="Y">random(Player.Y + 300,Player.Y + 1000)</param>
+                </action>
+                <action id="-3" name="Create object" sid="580949310320722" type="System">
+                    <param id="0" name="Object to create">Incorrect</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">Sprite31.X</param>
+                    <param id="3" name="Y">Sprite31.Y</param>
+                </action>
+                <action id="0" name="Set text" sid="408814786540060" type="Incorrect">
+                    <param id="0" name="Text">Answer + int(random(1,15))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="416442452808927">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="208772176747468" type="System">
+                    <param id="0" name="Interval (seconds)">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="266143116948817" type="System">
+                    <param id="0" name="Object to create">Sprite31</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">random(Player.X - 300,Player.X - 1200)</param>
+                    <param id="3" name="Y">random(Player.Y - 300,Player.Y - 1000)</param>
+                </action>
+                <action id="-3" name="Create object" sid="344372877532017" type="System">
+                    <param id="0" name="Object to create">Incorrect</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">Sprite31.X</param>
+                    <param id="3" name="Y">Sprite31.Y</param>
+                </action>
+                <action id="0" name="Set text" sid="187562683046344" type="Incorrect">
+                    <param id="0" name="Text">Answer + int(random(1,15))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="671949901702275">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="393521907050599" type="System">
+                    <param id="0" name="Interval (seconds)">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="651312354922473" type="System">
+                    <param id="0" name="Object to create">Sprite30</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">random(Player.X + 300,Player.X + 1200)</param>
+                    <param id="3" name="Y">random(Player.Y + 300,Player.Y + 1000)</param>
+                </action>
+                <action id="-3" name="Create object" sid="781126905875979" type="System">
+                    <param id="0" name="Object to create">Correct</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">Sprite30.X</param>
+                    <param id="3" name="Y">Sprite30.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="833499210537914">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="690030663218786" type="System">
+                    <param id="0" name="Interval (seconds)">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="679520045703476" type="System">
+                    <param id="0" name="Object to create">Sprite30</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">random(Player.X - 300,Player.X - 1200)</param>
+                    <param id="3" name="Y">random(Player.Y - 300,Player.Y - 1000)</param>
+                </action>
+                <action id="-3" name="Create object" sid="502054169576763" type="System">
+                    <param id="0" name="Object to create">Correct</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">Sprite30.X</param>
+                    <param id="3" name="Y">Sprite30.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="504121721250820">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="203997930517593" type="System">
+                    <param id="0" name="Interval (seconds)">15</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="621967921338471" type="System">
+                    <param id="0" name="Object to create">Sprite27</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">random(Player.X + 300,Player.X + 1200)</param>
+                    <param id="3" name="Y">random(Player.Y + 300,Player.Y + 1000)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="945409799840813">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="992028422481198" type="System">
+                    <param id="0" name="Interval (seconds)">25</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="430690392112744" type="System">
+                    <param id="0" name="Object to create">Sprite27</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">random(Player.X - 300,Player.X - 1200)</param>
+                    <param id="3" name="Y">random(Player.Y - 300,Player.Y - 1000)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="756094263571193">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="641870603119848" type="System">
+                    <param id="0" name="Interval (seconds)">35</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="382016610974899" type="System">
+                    <param id="0" name="Object to create">Sprite28</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">random(Player.X + 300,Player.X + 1200)</param>
+                    <param id="3" name="Y">random(Player.Y + 300,Player.Y + 1000)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="332490128618822">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="592305599617284" type="System">
+                    <param id="0" name="Interval (seconds)">45</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="567515120741788" type="System">
+                    <param id="0" name="Object to create">Sprite28</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">random(Player.X - 300,Player.X - 1200)</param>
+                    <param id="3" name="Y">random(Player.Y - 300,Player.Y - 1000)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="329075244402458">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="644437096370819" type="System">
+                    <param id="0" name="Interval (seconds)">55</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="957343607718269" type="System">
+                    <param id="0" name="Object to create">Sprite29</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">random(Player.X + 300,Player.X + 1200)</param>
+                    <param id="3" name="Y">random(Player.Y + 300,Player.Y + 1000)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="811298050433996">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="460809470888092" type="System">
+                    <param id="0" name="Interval (seconds)">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="822767191355048" type="System">
+                    <param id="0" name="Object to create">Sprite29</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">random(Player.X - 300,Player.X - 1200)</param>
+                    <param id="3" name="Y">random(Player.Y - 300,Player.Y - 1000)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="590651124924421">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="265699822799080" type="Player">
+                    <param id="0" name="Object">Sprite27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="614962061633011" type="Sprite27" />
+                <action id="0" name="Play" sid="947866407630853" type="Audio">
+                    <param id="0" name="Audio file">PowerUp16</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Add to" sid="883443307759918" type="System">
+                    <param id="0" name="Variable">PowerUps</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="892413502104200" type="System">
+                    <param id="0" name="Variable">Timer</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="153520985406221" type="Player">
+                    <param id="0" name="Speed">400</param>
+                </action>
+                <action id="-12" name="Set group active" sid="235249183237772" type="System">
+                    <param id="0" name="Group name">&quot;1&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="538254177670305" type="Text12">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="175551875611400" type="Text13">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="311466388729091">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="728424427481882" type="Player">
+                    <param id="0" name="Object">Sprite28</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="450558675184972" type="Sprite28" />
+                <action id="0" name="Play" sid="632896024800107" type="Audio">
+                    <param id="0" name="Audio file">PowerUp16</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Add to" sid="162661834760281" type="System">
+                    <param id="0" name="Variable">PowerUps</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="716411066317211" type="System">
+                    <param id="0" name="Variable">Timer</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="809604926136317" type="Player">
+                    <param id="0" name="Speed">100</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="611661911182098" type="Enemy">
+                    <param id="0" name="Speed">100</param>
+                </action>
+                <action id="-12" name="Set group active" sid="666674271090590" type="System">
+                    <param id="0" name="Group name">&quot;1&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="381580659779784" type="Text12">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="296558527840429" type="Text13">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="466206770670971">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="557892226771130" type="Player">
+                    <param id="0" name="Object">Sprite29</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="209965124697072" type="Sprite29" />
+                <action id="0" name="Play" sid="591330305720821" type="Audio">
+                    <param id="0" name="Audio file">PowerUp16</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Add to" sid="558871073682837" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="446088699485186" type="System">
+                    <param id="0" name="Variable">PowerUps</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" inactive="1" sid="481513467148854" title="1">
+            <sub-events>
+                <event-block sid="496061867657182">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="555292425786735" type="System">
+                            <param id="0" name="Interval (seconds)">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="863935713251120" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="569840840720787" type="Text13">
+                            <param id="0" name="Text">Timer</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="954956974196393">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="395933912279990" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="127179500664081" type="System">
+                            <param id="0" name="Group name">&quot;1&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="943804326920643" type="Player">
+                            <param id="0" name="Speed">200</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="815551508116619" type="Enemy">
+                            <param id="0" name="Speed">150</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="421826828704918" type="Text12">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="286569541568359" type="Text13">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="511660765841595" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="146712819576174">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="989903341587967" type="Sprite27">
+                    <param id="0" name="Object">Sprite28</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="105238332241685" type="Sprite28">
+                    <param id="0" name="X">Sprite28.X + 250</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="443797588799641">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="164293988730357" type="Sprite27">
+                    <param id="0" name="Object">Sprite29</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="114320634726752" type="Sprite29">
+                    <param id="0" name="X">Sprite29.X + 250</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="431349584188570">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="852317444839508" type="Sprite28">
+                    <param id="0" name="Object">Sprite29</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="198857702713730" type="Sprite29">
+                    <param id="0" name="X">Sprite29.X + 250</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="170363724973736">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="677233907066045" type="Sprite27">
+                    <param id="0" name="Object">Sprite27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="825225996598938" type="Sprite27">
+                    <param id="0" name="X">Sprite29.X + 250</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="304774496159402">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="625232688388824" type="Sprite28">
+                    <param id="0" name="Object">Sprite28</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="756165728251298" type="Sprite28">
+                    <param id="0" name="X">Sprite29.X + 250</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="424492085911795">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="429297690776260" type="Sprite29">
+                    <param id="0" name="Object">Sprite29</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="575964363267940" type="Sprite29">
+                    <param id="0" name="X">Sprite29.X + 250</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="359627687145081">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="524028082731646" type="Player">
+                    <param id="0" name="Object">Enemy</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="986825760376315" type="Sprite19" />
+                <action id="-11" name="Subtract from" sid="294950239528910" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="779895611471117">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="364565353557310" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="174303199120855" type="Sprite25">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="465414257885960">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="886172475505946" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="812104635482242" type="Sprite24">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="982980440572012">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="390657234809555" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="131340061729856" type="Sprite23">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="432201722213983" type="System">
+                    <param id="0" name="Layout">Game Over</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="986565201078242">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="758957302041055" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="135494385838858" type="Sprite25">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="880402397316126">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="108703152255123" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="537832139888323" type="Sprite24">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="847098116328266">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="877101100246839" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="101937145846450" type="Sprite23">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="993802063172359">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="105755782038452" type="Sprite31">
+                    <param id="0" name="Object">Sprite30</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="410996927766495" type="Sprite30">
+                    <param id="0" name="X">Self.X + 200</param>
+                    <param id="1" name="Y">Self.Y + 500</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="652762765965619" type="Correct">
+                    <param id="0" name="Object">Sprite30</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="482794644891354">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="665196580110156" type="Sprite30">
+                    <param id="0" name="Object">Sprite30</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="969140808774073" type="Sprite30">
+                    <param id="0" name="X">Self.X + 200</param>
+                    <param id="1" name="Y">Self.Y + 500</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="385556865962643" type="Correct">
+                    <param id="0" name="Object">Sprite30</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="720570725842353">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="409582620189757" type="Sprite31">
+                    <param id="0" name="Object">Sprite31</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="353078900690805" type="Sprite31">
+                    <param id="0" name="X">Self.X + 200</param>
+                    <param id="1" name="Y">Self.Y + 500</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="444266281297280" type="Incorrect">
+                    <param id="0" name="Object">Sprite31</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="472167590614914">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="317473924193758" type="Player">
+                    <param id="0" name="Object">Sprite30</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="526527171396739" type="Audio">
+                    <param id="0" name="Audio file">True and False Sound Effects Correct and Wrong Sound Effect Doğru ve Yanlış Ses Efektleri (mp3cut.net)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Add to" sid="464596187066833" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="260568436979117" type="Sprite35">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="958769713181849" type="Sprite35" />
+                <action id="-12" name="Set group active" sid="674164057225904" type="System">
+                    <param id="0" name="Group name">&quot;2&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="574236402247168">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="950802688022833" type="Player">
+                    <param id="0" name="Object">Sprite31</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="853232707850672" type="Audio">
+                    <param id="0" name="Audio file">Bleep-SoundBible.com-1927126940</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="514946012116064" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="844868761917011" type="Sprite36">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="282452400020064" type="Sprite36" />
+                <action id="-12" name="Set group active" sid="108669695619392" type="System">
+                    <param id="0" name="Group name">&quot;2&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" inactive="1" sid="147639093625144" title="2">
+            <sub-events>
+                <event-block sid="966412480328895">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="163197554113180" type="System">
+                            <param id="0" name="Variable">EnemyCount</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="596746872228499" type="System">
+                            <param id="0" name="Variable">UniqueID</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Request URL" sid="417330154936174" type="AJAX">
+                            <param id="0" name="Tag">&quot;1&quot;</param>
+                            <param id="1" name="URL">&quot;https://hamzawasim.net/portfolio/zombiemath/backend/api.php?grade=&quot;&amp;Grade&amp;&quot;&amp;skill=&quot;&amp;Skill&amp;&quot;&amp;id=&quot;&amp;UniqueID</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="838496692962749" type="Enemy" />
+                        <action id="0" name="Set text" sid="738294603478940" type="Question">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="439577136407883" type="System">
+                            <param id="0" name="Variable">EnemyCount</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="835075436499251">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="833913873009854" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="602904436122111" type="Sprite30" />
+                        <action id="-9" name="Destroy" sid="793330311461786" type="Sprite31" />
+                        <action id="-9" name="Destroy" sid="676684701592115" type="Sprite27" />
+                        <action id="-9" name="Destroy" sid="581539835819649" type="Sprite28" />
+                        <action id="-9" name="Destroy" sid="201718936157484" type="Sprite29" />
+                        <action id="-9" name="Destroy" sid="948377525953953" type="Incorrect" />
+                        <action id="-9" name="Destroy" sid="458644348018915" type="Correct" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="846831245337898">
+            <conditions>
+                <condition id="0" name="On completed" sid="565376529507706" type="AJAX">
+                    <param id="0" name="Tag">&quot;1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Load" sid="737686752071658" type="Dictionary">
+                    <param id="0" name="JSON">AJAX.LastData</param>
+                </action>
+                <action id="-9" name="Set value" sid="100366224536564" type="System">
+                    <param id="0" name="Variable">Answer</param>
+                    <param id="1" name="Value">Dictionary.Get(&quot;answer&quot;)</param>
+                </action>
+                <action id="-9" name="Set value" sid="180837308892924" type="System">
+                    <param id="0" name="Variable">Question</param>
+                    <param id="1" name="Value">Dictionary.Get(&quot;question&quot;)</param>
+                </action>
+                <action id="-16" name="Wait" sid="181436486492725" type="System">
+                    <param id="0" name="Seconds">0.6</param>
+                </action>
+                <action id="0" name="Set text" sid="611501102922317" type="Correct">
+                    <param id="0" name="Text">Answer</param>
+                </action>
+                <action id="0" name="Set text" sid="840998282994080" type="Incorrect">
+                    <param id="0" name="Text">Answer + int(random(1,15))</param>
+                </action>
+                <action id="0" name="Set text" sid="783163437169157" type="Question">
+                    <param id="0" name="Text">Question</param>
+                </action>
+                <action id="-16" name="Wait" sid="144653889061255" type="System">
+                    <param id="0" name="Seconds">0.4</param>
+                </action>
+                <action id="-9" name="Set value" sid="751594390169222" type="System">
+                    <param id="0" name="Variable">EnemyCount</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="615115135800911" type="System">
+                    <param id="0" name="Group name">&quot;2&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="823418453263624">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="983439955421585" type="Sprite35" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="327674143760062" type="Sprite35">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="826345556845778">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="342021762245292" type="Sprite36" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="667729058243499" type="Sprite36">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="543531509136562">
+            <conditions>
+                <condition id="0" name="Compare text" sid="320655240701595" type="Incorrect">
+                    <param id="0" name="Text to compare">Correct.Text</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="672094769204227" type="Incorrect">
+                    <param id="0" name="Text">int(Correct.Text) + 3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="325992085547379">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="844364905682379" type="Enemy" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="762663946419925" type="System">
+                    <param id="0" name="Object to create">Enemy</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">Player.X + 1920</param>
+                    <param id="3" name="Y">Player.Y + 1080</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="891907110303109">
+            <conditions>
+                <condition id="-18" name="On created" sid="807249464075098" type="Sprite27" />
+                <condition id="1" name="Is overlapping another object" sid="298130201744059" type="Sprite27">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="439120433201546" type="Sprite27" />
+            </actions>
+        </event-block>
+        <event-block sid="993923717287885">
+            <conditions>
+                <condition id="-18" name="On created" sid="276084140944905" type="Sprite28" />
+                <condition id="1" name="Is overlapping another object" sid="654487815808245" type="Sprite28">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="605997923752357" type="Sprite28" />
+            </actions>
+        </event-block>
+        <event-block sid="975605466195685">
+            <conditions>
+                <condition id="-18" name="On created" sid="208451179243790" type="Sprite29" />
+                <condition id="1" name="Is overlapping another object" sid="413242797766794" type="Sprite29">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="856469144331755" type="Sprite29" />
+            </actions>
+        </event-block>
+        <event-block sid="351222792169935">
+            <conditions>
+                <condition id="-18" name="On created" sid="102040949764120" type="Sprite30" />
+                <condition id="1" name="Is overlapping another object" sid="556247193170053" type="Sprite30">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="560380182187605" type="Sprite30" />
+                <action id="-9" name="Destroy" sid="116866467019820" type="Correct" />
+            </actions>
+        </event-block>
+        <event-block sid="524921178735825">
+            <conditions>
+                <condition id="-18" name="On created" sid="745001575309016" type="Sprite31" />
+                <condition id="1" name="Is overlapping another object" sid="263113129896261" type="Sprite31">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="535622761064842" type="Sprite31" />
+                <action id="-9" name="Destroy" sid="969385152575357" type="Incorrect" />
+            </actions>
+        </event-block>
+        <event-block sid="142321635540853">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="432125958862345" type="Sprite30">
+                    <param id="0" name="Object">Sprite27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="351877944761142" type="Sprite27">
+                    <param id="0" name="X">Sprite29.X + 250</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="128680137120834">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="182825793343307" type="Sprite30">
+                    <param id="0" name="Object">Sprite28</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="908773052633075" type="Sprite28">
+                    <param id="0" name="X">Sprite29.X + 250</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="117319548149429">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="561595669160416" type="Sprite30">
+                    <param id="0" name="Object">Sprite29</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="899933405019304" type="Sprite29">
+                    <param id="0" name="X">Sprite29.X + 250</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="913873909593143">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="937853830006399" type="Sprite31">
+                    <param id="0" name="Object">Sprite27</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="192612105907374" type="Sprite27">
+                    <param id="0" name="X">Sprite29.X + 250</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="659443119138987">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="799782310877317" type="Sprite31">
+                    <param id="0" name="Object">Sprite28</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="806165754733065" type="Sprite28">
+                    <param id="0" name="X">Sprite29.X + 250</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="685645205509734">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="323525714461699" type="Sprite31">
+                    <param id="0" name="Object">Sprite29</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="743970259439442" type="Sprite29">
+                    <param id="0" name="X">Sprite29.X + 250</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="766606259308633">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="167958307315085" type="System">
+                    <param id="0" name="First value">Sprite30.X</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Second value">Correct.X</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="453205746058079" type="Sprite30" />
+                <action id="-9" name="Destroy" sid="249440819418395" type="Correct" />
+            </actions>
+        </event-block>
+        <event-block sid="443805217997343">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="382664448736648" type="System">
+                    <param id="0" name="First value">Sprite31.X</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Second value">Incorrect.X</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="417782407600576" type="Sprite31" />
+                <action id="-9" name="Destroy" sid="494366602776077" type="Incorrect" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Skill Selection Events</name>
+    <events>
+        <variable constant="0" name="UniqueID" sid="232382424374078" static="0" type="number">100</variable>
+        <variable constant="0" name="Skill" sid="278536663111423" static="0" type="text"></variable>
+        <include>Main Menu Events</include>
+        <event-block sid="305944500911299">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="905487068757398" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="459646520560699" type="bg" />
+                <action id="5" name="Set frame" sid="897188172658007" type="bg">
+                    <param id="0" name="Frame number">random(0,3)</param>
+                </action>
+                <action id="2" name="Stop" sid="515986716759230" type="Sprite20" />
+            </actions>
+        </event-block>
+        <event-block sid="255909281900186">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="666046863141230" type="Mouse">
+                    <param id="0" name="Object">Sprite20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="319983319247515" type="Sprite20">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="708084379132192">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="589988076452875" type="Mouse">
+                    <param id="0" name="Object">Sprite20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="960638439360305" type="Sprite20">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="902886284326946">
+            <conditions>
+                <condition id="3" name="On touched object" sid="827952377811456" type="Touch">
+                    <param id="0" name="Object">Sprite20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="207454263376264" type="System">
+                    <param id="0" name="Layout">Main Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="669636067583964">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="265709826623840" type="Mouse">
+                    <param id="0" name="Object">Text</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set font size" sid="714162183536528" type="Text">
+                    <param id="0" name="Size (pt)">75</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="727046548417394">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="233535755244318" type="Mouse">
+                    <param id="0" name="Object">Text</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set font size" sid="793969095433620" type="Text">
+                    <param id="0" name="Size (pt)">72</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="760891433806566">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="715656284264679" type="Mouse">
+                    <param id="0" name="Object">Text2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set font size" sid="941162036539301" type="Text2">
+                    <param id="0" name="Size (pt)">75</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="656215059671219">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="538491708157675" type="Mouse">
+                    <param id="0" name="Object">Text2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set font size" sid="374554053588874" type="Text2">
+                    <param id="0" name="Size (pt)">72</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="931243889939062">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="343688310727762" type="Mouse">
+                    <param id="0" name="Object">Text3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set font size" sid="803796918903807" type="Text3">
+                    <param id="0" name="Size (pt)">75</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="317487924123448">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="192181763557275" type="Mouse">
+                    <param id="0" name="Object">Text3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set font size" sid="193977435537136" type="Text3">
+                    <param id="0" name="Size (pt)">72</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="726178576773492">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="490132237339491" type="Mouse">
+                    <param id="0" name="Object">Text4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set font size" sid="294447589613545" type="Text4">
+                    <param id="0" name="Size (pt)">75</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="110470381399726">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="566105329869308" type="Mouse">
+                    <param id="0" name="Object">Text4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set font size" sid="401988485502595" type="Text4">
+                    <param id="0" name="Size (pt)">72</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="792965745844148">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="731000418581232" type="Mouse">
+                    <param id="0" name="Object">Text5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set font size" sid="866579590085483" type="Text5">
+                    <param id="0" name="Size (pt)">75</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="232874890817001">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="547938225563436" type="Mouse">
+                    <param id="0" name="Object">Text5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set font size" sid="595658846326077" type="Text5">
+                    <param id="0" name="Size (pt)">72</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="533607130389372">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="862303323484971" type="Mouse">
+                    <param id="0" name="Object">Text6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set font size" sid="329969127302431" type="Text6">
+                    <param id="0" name="Size (pt)">75</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="416357134750506">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="444077810060383" type="Mouse">
+                    <param id="0" name="Object">Text6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set font size" sid="208718075545970" type="Text6">
+                    <param id="0" name="Size (pt)">72</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="543488083166422">
+            <conditions>
+                <condition id="3" name="On touched object" sid="878827766494654" type="Touch">
+                    <param id="0" name="Object">Text</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="810513661427507" type="System">
+                    <param id="0" name="Variable">Skill</param>
+                    <param id="1" name="Value">&quot;addition&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="766528372198730" type="System">
+                    <param id="0" name="Layout">Loading Layout</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="767150938405195">
+            <conditions>
+                <condition id="3" name="On touched object" sid="905447198970562" type="Touch">
+                    <param id="0" name="Object">Text2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="743715943435337" type="System">
+                    <param id="0" name="Variable">Skill</param>
+                    <param id="1" name="Value">&quot;subtraction&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="674344579941538" type="System">
+                    <param id="0" name="Layout">Loading Layout</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="447892881303604">
+            <conditions>
+                <condition id="3" name="On touched object" sid="733789617239883" type="Touch">
+                    <param id="0" name="Object">Text3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="195795769988012" type="System">
+                    <param id="0" name="Variable">Skill</param>
+                    <param id="1" name="Value">&quot;multiplication&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="771981154420144" type="System">
+                    <param id="0" name="Layout">Loading Layout</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="531919501396498">
+            <conditions>
+                <condition id="3" name="On touched object" sid="729558584661600" type="Touch">
+                    <param id="0" name="Object">Text4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="216604695121977" type="System">
+                    <param id="0" name="Variable">Skill</param>
+                    <param id="1" name="Value">&quot;division&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="511476853222137" type="System">
+                    <param id="0" name="Layout">Loading Layout</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="895310000252590">
+            <conditions>
+                <condition id="3" name="On touched object" sid="906584978691229" type="Touch">
+                    <param id="0" name="Object">Text5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="647262853704041" type="System">
+                    <param id="0" name="Variable">Skill</param>
+                    <param id="1" name="Value">&quot;equation&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="882940927468088" type="System">
+                    <param id="0" name="Layout">Loading Layout</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="604133654934140">
+            <conditions>
+                <condition id="3" name="On touched object" sid="672225496037866" type="Touch">
+                    <param id="0" name="Object">Text6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="487612013532606" type="System">
+                    <param id="0" name="Variable">Skill</param>
+                    <param id="1" name="Value">&quot;pattern&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="498321867353217" type="System">
+                    <param id="0" name="Layout">Loading Layout</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

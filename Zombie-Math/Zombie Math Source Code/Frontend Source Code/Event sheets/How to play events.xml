@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>How to play events</name>
+    <events>
+        <include>Main Menu Events</include>
+        <event-block sid="672541011509306">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="607603558225299" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="851915741402400" type="bg" />
+                <action id="5" name="Set frame" sid="718557438107309" type="bg">
+                    <param id="0" name="Frame number">random(0,3)</param>
+                </action>
+                <action id="2" name="Stop" sid="358161897219656" type="Sprite20" />
+            </actions>
+        </event-block>
+        <event-block sid="850813544209038">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="994545721885986" type="Mouse">
+                    <param id="0" name="Object">Sprite20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="165091405079275" type="Sprite20">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="266906948675022">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="404336428483895" type="Mouse">
+                    <param id="0" name="Object">Sprite20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="218983856785913" type="Sprite20">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="907933766696728">
+            <conditions>
+                <condition id="3" name="On touched object" sid="910088805498644" type="Touch">
+                    <param id="0" name="Object">Sprite20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="912811828460455" type="System">
+                    <param id="0" name="Layout">Main Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

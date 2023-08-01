@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Loading Layout Events</name>
+    <events>
+        <include>Main Menu Events</include>
+        <variable constant="0" name="Answer" sid="903253643151352" static="0" type="number">0</variable>
+        <variable constant="0" name="Question" sid="511343314540548" static="0" type="text"></variable>
+        <event-block sid="423648709170987">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="289973637029336" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="362362555877114" type="System">
+                    <param id="0" name="Variable">UniqueID</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Request URL" sid="337873140295606" type="AJAX">
+                    <param id="0" name="Tag">&quot;2&quot;</param>
+                    <param id="1" name="URL">&quot;https://hamzawasim.net/portfolio/zombiemath/backend/api.php?grade=&quot;&amp;Grade&amp;&quot;&amp;skill=&quot;&amp;Skill&amp;&quot;&amp;id=&quot;&amp;UniqueID</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="458316358097300">
+            <conditions>
+                <condition id="0" name="On completed" sid="957091049969261" type="AJAX">
+                    <param id="0" name="Tag">&quot;2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Load" sid="845918942645200" type="Dictionary">
+                    <param id="0" name="JSON">AJAX.LastData</param>
+                </action>
+                <action id="-9" name="Set value" sid="182194602710814" type="System">
+                    <param id="0" name="Variable">Answer</param>
+                    <param id="1" name="Value">Dictionary.Get(&quot;answer&quot;)</param>
+                </action>
+                <action id="-9" name="Set value" sid="239998380418232" type="System">
+                    <param id="0" name="Variable">Question</param>
+                    <param id="1" name="Value">Dictionary.Get(&quot;question&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="560350459805004" type="Question">
+                    <param id="0" name="Text">Question</param>
+                </action>
+                <action id="0" name="Set text" sid="976594449539533" type="Correct">
+                    <param id="0" name="Text">Answer</param>
+                </action>
+                <action id="0" name="Set text" sid="469999208991479" type="Incorrect">
+                    <param id="0" name="Text">int(Answer + random(1,15))</param>
+                </action>
+                <action id="-16" name="Wait" sid="428142196868225" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="852937191112043" type="System">
+                    <param id="0" name="Layout">Game Area</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

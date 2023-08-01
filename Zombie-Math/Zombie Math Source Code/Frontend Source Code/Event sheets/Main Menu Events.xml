@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Main Menu Events</name>
+    <events>
+        <variable constant="0" name="Sound" sid="901982396658027" static="0" type="number">0</variable>
+        <event-block sid="592883703496973">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="383155743268070" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="198842352873404" type="bg" />
+                <action id="2" name="Stop" sid="194733918569576" type="Sprite2" />
+                <action id="2" name="Stop" sid="637425240725922" type="Sprite3" />
+                <action id="2" name="Stop" sid="391949633462988" type="Sprite4" />
+                <action id="2" name="Stop" sid="657387182982097" type="Sprite5" />
+                <action id="5" name="Set frame" sid="162072754201243" type="bg">
+                    <param id="0" name="Frame number">random(0,3)</param>
+                </action>
+                <action id="5" name="Set web font" sid="477365824520607" type="Correct">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="988095985784579" type="Incorrect">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="252338633399282" type="Question">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="415746932958495" type="Score">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="633954775991547" type="Text">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="988278362491702" type="Text11">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="875549402245394" type="Text12">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="175668346553569" type="Text13">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="426595781128096" type="Text14">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="805378820444364" type="Text15">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="958041597437022" type="Text16">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="240623850097711" type="Text17">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="204776665474369" type="Text18">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="264400924647106" type="Text2">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="601901971415537" type="Text3">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="976317910731439" type="Text4">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="295291423941947" type="Text5">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="405448987439565" type="Text6">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="562564327076518" type="Text7">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="318766556521748" type="Text8">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="731974977474551" type="Text9">
+                    <param id="0" name="Family name">&quot;Berlin Sans FB&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://hamzawasim.net/portfolio/zombiemath/stylesheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="794775846030685">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="115125634786945" type="Mouse">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="311348045658139" type="Sprite2">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="828337140050509">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="480080509137643" type="Mouse">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="652776211080431" type="Sprite2">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="609248934338537">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="640354829683895" type="Mouse">
+                    <param id="0" name="Object">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="968922598676785" type="Sprite3">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="974285943131719">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="828917716515963" type="Mouse">
+                    <param id="0" name="Object">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="219597910532626" type="Sprite3">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="649066591597981">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="903197551429840" type="Mouse">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="134519702996695" type="Sprite4">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="793220894631908">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="902499781886958" type="Mouse">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="479403286917208" type="Sprite4">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="536320542166439">
+            <conditions>
+                <condition id="3" name="On touched object" sid="510791401494290" type="Touch">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="263005340112188" type="System">
+                    <param id="0" name="Variable">Answer</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="988480152257766" type="System">
+                    <param id="0" name="Variable">EnemyCount</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="679442978949127" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="306850653922288" type="System">
+                    <param id="0" name="Variable">PowerUps</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="327334478308785" type="System">
+                    <param id="0" name="Variable">Question</param>
+                    <param id="1" name="Value">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="233130794604410" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="499885147826894" type="System">
+                    <param id="0" name="Variable">Timer</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="922473927856850" type="System">
+                    <param id="0" name="Variable">PowerUps</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="573369290868363" type="System">
+                    <param id="0" name="Variable">Grade</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="862512359209725" type="System">
+                    <param id="0" name="Variable">Skill</param>
+                    <param id="1" name="Value">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="851331276830414" type="System">
+                    <param id="0" name="Layout">Grade Selection</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="402104768463712">
+            <conditions>
+                <condition id="3" name="On touched object" sid="674083627322764" type="Touch">
+                    <param id="0" name="Object">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="277939583477233" type="System">
+                    <param id="0" name="Layout">How to play</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="277221150856613">
+            <conditions>
+                <condition id="3" name="On touched object" sid="995191828354669" type="Touch">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="141174658464861" type="Browser">
+                    <param id="0" name="URL">&quot;https://codecanyon.net/user/hamzawasim3/portfolio&quot;</param>
+                    <param id="1" name="Tag">&quot;Portfolio&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="704465186948471">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="984340907009135" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="819746692191631" type="Audio">
+                    <param id="0" name="Audio file">Puzzle-Dreams (online-audio-converter.com)</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="622683084112466">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="468513762736387" type="Mouse">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="285697392338365" type="Sprite5">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="177876196091130">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="343155119118124" type="Mouse">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="400556020055980" type="Sprite5">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="705929109674091">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="814030899937640" type="Mouse">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="655402083142319" type="Sprite5">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="589291129546151" type="Sprite5">
+                    <param id="0" name="Frame number">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="543511539664848">
+            <conditions>
+                <condition id="3" name="On touched object" sid="178262492878969" type="Touch">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="327462964011578" type="System">
+                    <param id="0" name="Variable">Sound</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="838279805988137">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="407310148291348" type="System">
+                    <param id="0" name="Variable">Sound</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="701721816922018" type="Sprite5">
+                    <param id="0" name="Frame number">3</param>
+                </action>
+                <action id="22" name="Set paused" sid="106681186912280" type="Audio">
+                    <param id="0" name="Tag">&quot;1&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="8" name="Set silent" sid="846227909380802" type="Audio">
+                    <param id="0" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="844826402639919">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="637669333026898" type="Mouse">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="834869690285735" type="Sprite5">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="343204902710902" type="Sprite5">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="595302047015778">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="392969817132694" type="System">
+                    <param id="0" name="Variable">Sound</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="369456324155390" type="Sprite5">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="22" name="Set paused" sid="573796221675892" type="Audio">
+                    <param id="0" name="Tag">&quot;1&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="8" name="Set silent" sid="178887884552656" type="Audio">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="671285395668506" type="System">
+                    <param id="0" name="Variable">Sound</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

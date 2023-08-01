@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Grade Selection Events</name>
+    <events>
+        <include>Main Menu Events</include>
+        <variable constant="0" name="Grade" sid="503678601892730" static="0" type="number">0</variable>
+        <event-block sid="304708925285987">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="687971671220782" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="189949929071556" type="bg" />
+                <action id="5" name="Set frame" sid="982422684482859" type="bg">
+                    <param id="0" name="Frame number">random(0,3)</param>
+                </action>
+                <action id="2" name="Stop" sid="780255851268723" type="Sprite8" />
+                <action id="2" name="Stop" sid="717225014428579" type="Sprite9" />
+                <action id="2" name="Stop" sid="559872528186814" type="Sprite10" />
+                <action id="2" name="Stop" sid="127850946172465" type="Sprite11" />
+                <action id="2" name="Stop" sid="582366429743553" type="Sprite12" />
+                <action id="2" name="Stop" sid="450854458730241" type="Sprite13" />
+                <action id="2" name="Stop" sid="955848427898004" type="Sprite14" />
+                <action id="2" name="Stop" sid="843542892515400" type="Sprite15" />
+                <action id="2" name="Stop" sid="668889910115467" type="Sprite20" />
+            </actions>
+        </event-block>
+        <event-block sid="971032151491755">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="841034858159197" type="Mouse">
+                    <param id="0" name="Object">Sprite8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="946474380146389" type="Sprite8">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="686145438217860">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="343891124410861" type="Mouse">
+                    <param id="0" name="Object">Sprite8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="810334457533503" type="Sprite8">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="741900361270572">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="972943076340598" type="Mouse">
+                    <param id="0" name="Object">Sprite9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="799108311854658" type="Sprite9">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="520006394354993">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="553854906248153" type="Mouse">
+                    <param id="0" name="Object">Sprite9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="802509403499203" type="Sprite9">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="653395603969287">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="773928175593404" type="Mouse">
+                    <param id="0" name="Object">Sprite10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="694929392090657" type="Sprite10">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="346122388933924">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="248750673472550" type="Mouse">
+                    <param id="0" name="Object">Sprite10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="862862928537704" type="Sprite10">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="797029795571590">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="453360455372410" type="Mouse">
+                    <param id="0" name="Object">Sprite11</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="432022810924333" type="Sprite11">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="509389361986575">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="355775762767314" type="Mouse">
+                    <param id="0" name="Object">Sprite11</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="372456603061846" type="Sprite11">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="417946752257147">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="497711124284437" type="Mouse">
+                    <param id="0" name="Object">Sprite12</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="338946951068076" type="Sprite12">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="488977745073228">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="807728736296931" type="Mouse">
+                    <param id="0" name="Object">Sprite12</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="818288610854502" type="Sprite12">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="491666297825835">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="283189321871236" type="Mouse">
+                    <param id="0" name="Object">Sprite13</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="265332709194126" type="Sprite13">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="776441131484083">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="606639938928303" type="Mouse">
+                    <param id="0" name="Object">Sprite13</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="913104541570728" type="Sprite13">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="713620413547757">
+            <conditions>
+                <condition id="3" name="On touched object" sid="807817055513319" type="Touch">
+                    <param id="0" name="Object">Sprite8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="226758881475403" type="System">
+                    <param id="0" name="Variable">Grade</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="519376808980925" type="System">
+                    <param id="0" name="Layout">Skill Selection</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="868287055281106">
+            <conditions>
+                <condition id="3" name="On touched object" sid="453889152456778" type="Touch">
+                    <param id="0" name="Object">Sprite9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="326640677268481" type="System">
+                    <param id="0" name="Variable">Grade</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="378484657293179" type="System">
+                    <param id="0" name="Layout">Skill Selection</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="932215276312635">
+            <conditions>
+                <condition id="3" name="On touched object" sid="499124441011452" type="Touch">
+                    <param id="0" name="Object">Sprite10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="248338464205553" type="System">
+                    <param id="0" name="Variable">Grade</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="435455574324137" type="System">
+                    <param id="0" name="Layout">Skill Selection</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="995325522032556">
+            <conditions>
+                <condition id="3" name="On touched object" sid="926098564327445" type="Touch">
+                    <param id="0" name="Object">Sprite11</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="391268451095859" type="System">
+                    <param id="0" name="Variable">Grade</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="390172835184404" type="System">
+                    <param id="0" name="Layout">Skill Selection</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="682089078616905">
+            <conditions>
+                <condition id="3" name="On touched object" sid="637309961108477" type="Touch">
+                    <param id="0" name="Object">Sprite12</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="973529502408348" type="System">
+                    <param id="0" name="Variable">Grade</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="149085141375732" type="System">
+                    <param id="0" name="Layout">Skill Selection</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="917863782427069">
+            <conditions>
+                <condition id="3" name="On touched object" sid="836581987264082" type="Touch">
+                    <param id="0" name="Object">Sprite13</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="563993507420001" type="System">
+                    <param id="0" name="Variable">Grade</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="189188244712002" type="System">
+                    <param id="0" name="Layout">Skill Selection</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="949057073469928">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="264644748787805" type="Mouse">
+                    <param id="0" name="Object">Sprite20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="399838283991717" type="Sprite20">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="478597197162688">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="603098696863557" type="Mouse">
+                    <param id="0" name="Object">Sprite20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="260954961464107" type="Sprite20">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="313768858012767">
+            <conditions>
+                <condition id="3" name="On touched object" sid="961213807822245" type="Touch">
+                    <param id="0" name="Object">Sprite20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="817027540038383" type="System">
+                    <param id="0" name="Layout">Main Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,239 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Zombie Math - HTML5 Game With Backend (Construct 3 | Construct 2 | c3p | capx | php)</title>
+	
+	<meta name="description" content="Zombie Math is a fighting game.">
+	<meta name="author" content="Hamza Wasim">
+	<meta name="copyright" content="Hamza Wasim">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2020-05-11T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#E9E9E9;color:#383838;}
+		::-moz-selection{background:#FF9900;color:#424242;}
+		::selection{background:#FF9900;color:#424242;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_3.png);}
+		a{color:#FF9900;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #FFFFFF, #B56D00);
+			  background-image: -ms-linear-gradient(top, #FFFFFF, #B56D00);
+			  background-image: -webkit-gradient(linear, 0 0, 0 FFFFFF%, from(#BCBCBC), to(#B56D00));
+			  background-image: -webkit-linear-gradient(top, #FFFFFF, #B56D00);
+			  background-image: -o-linear-gradient(top, #FFFFFF, #B56D00);
+			  background-image: linear-gradient(top, #FFFFFF, #B56D00);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#B56D00', GradientType=0);
+			  border-color: #B56D00 #B56D00 #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #FFFFFF #FFFFFF #bfbfbf;
+		  background-color: #B56D00;
+		}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #F7F7F7;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#BCBCBC;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #DBDBDB;-moz-text-shadow:1px 1px 0px #DBDBDB;text-shadow:1px 1px 0px #DBDBDB;}
+		#documenter_sidebar ul{border-top:1px solid #A1A1A1;}
+		#documenter_sidebar ul a{border-top:1px solid #DBDBDB;border-bottom:1px solid #A1A1A1;color:#424242;}
+		#documenter_sidebar ul a:hover{background:#FF9900;color:#424242;border-top:1px solid #FF9900;}
+		#documenter_sidebar ul a.current{background:#FF9900;color:#424242;border-top:1px solid #FF9900;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-jet-clash-html5-game-admob">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#pre-requisite" title="Pre-Requisite">Pre-Requisite</a></li>
+			<li><a href="#how_to_backend" title="How to Reskin Game">How to Install and Configure Backend</a></li>
+			<li><a href="#how_to_add_admob" title="How to add Admob">How to add Admob</a></li>
+		</ul>
+		<div id="documenter_copyright">Copyright Hamza Wasim 2020 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Zombie Math - HTML5 Game With Backend</h1>
+	<h2>(Construct 3 | Construct 2 | c3p | capx | php)</h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>Created: 06/27/2020</li>
+	<li>Latest Update: 06/27/2020</li>
+	<li>By: Hamza Wasim</li>
+	<li>Website: <a href="https://www.hamzawasim.net/">https://www.hamzawasim.net/</a></li>
+	<li>Email: <a href="mailto:&#104;&#97;&#109;&#122;&#97;&#46;&#119;&#97;&#115;&#105;&#109;&#51;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#104;&#97;&#109;&#122;&#97;&#46;&#119;&#97;&#115;&#105;&#109;&#51;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></li>
+	</ul>
+	<p>Thank you for purchasing my game. If you have any questions that are beyond the scope of this documentation file, please feel free to contact me on my email. Thank you so much!</p>
+	</section>
+	
+	<section id="pre-requisite">
+	<div class="page-header"><h3>Pre-Requisite</h3><hr class="notop"></div>
+<p>
+	1.You should have the Business License of Construct 2 or 3. You can download Construct 2 from <a href="https://www.scirra.com/construct2/releases/r277">here.</a></p>
+<p>
+	2.Install Construct 2.</p>
+<p>
+	3.Extract &#39;Zombie Math&#39; Zip File.</p>
+	4.Open folder Zombie Math Source Code/Frontend Source Code.</p>
+	5.Open &#39;Zombie Math.caproj&#39; file.</p>
+<p>
+	<img alt="" src="assets/images/image_2.png"></p>
+<p>
+	6.After Opening &#39;Zombie Math.caproj&#39; file,you will see a window like this :</p>
+<p>
+	<img alt="" src="assets/images/image_6.png" style="width: 630px; height: 376px;"></p>
+	<p>
+	7.Extend the &#39;Event Sheets&#39; folder from the botton right side.</p>
+<p>
+	<img alt="" src="assets/images/image_4.png"></p>
+	<p>
+	8.Now, we need to change the URL to your website so that the frontend can connect with backend so for that open Main Menu,Loading Layout & Game Area Events</p>
+<p>
+	<img alt="" src="assets/images/image_9.png"></p>
+	<p>
+	9.Replace my website name with your website name and the desired location where you want to host the game.</p>
+<p>
+	<img alt="" src="assets/images/image_20.png"></p>
+	<p>
+	10.Do the same in loading layout & game area event sheets.</p>
+<p>
+	<img alt="" src="assets/images/image_21.png"></p>
+	<p>
+	<img alt="" src="assets/images/image_22.png"></p>
+	<p>
+	11.You can do some reskinning now and export the project.</p>
+	<p>
+	<img alt="" src="assets/images/image_23.png" style="width: 630px; height: 376px;"></p>
+</section>
+<section id="how_to_backend">
+	<div class="page-header"><h3>How to Install and Configure Backend</h3><hr class="notop"></div>
+	<p>1. Login to your Cpanel and go to MySQL Database </p>
+	<p><img alt="" src="assets/images/image_24.png"></p>
+	<p>2. Create a new Database with any name. </p>
+	<p><img alt="" src="assets/images/image_25.png"></p>
+	<p>3. Create a new MySQL user. </p>
+	<p><img alt="" src="assets/images/image_26.png"></p>
+	<p>4. Add that MySQL user to the newly created database.</p>
+	<p><img alt="" src="assets/images/image_27.png"></p>
+	<p>5. Now go back and go to phpmyadmin and select the database that you just created from the left side.</p>
+	<p><img alt="" src="assets/images/image_28.png"></p>
+	<p>6. From the navigation bar, select import and upload any one of two sql files  from "Backend Source Code". The "zombiemath_empty.sql" file is an empty database file, you need add new questions to it to make the game work. The "zombiemath_with_data.sql" file is the database file filled with data that you saw in the demo, you can add new questions to it.</p>
+	<p><img alt="" src="assets/images/image_29.png"></p>
+	<p>7. Once uploaded, you will these two tables in your database. Now go back to the cpanel</p>
+	<p><img alt="" src="assets/images/image_30.png"></p>
+	<p>8. Go to file manager and upload the backend and the new configured frontend game files. Once you have both the files, go to backend/core and right click on config.php and select edit.</p>
+	<p><img alt="" src="assets/images/image_31.png"></p>
+	<p>9.The editor will open in another window. Now edit the values that I have blacked out in the image below with your database details, you can find these details in the MySQL database.</p>
+	<p><img alt="" src="assets/images/image_32.png"></p>
+	<p>10.Once done, save the changes and close all the cpanel tabs.</p>
+	<p>11.You have successfully installed the game and configured the backend!</p>
+	<p>12. Now go to yourwebsite.com/zombiemath to play the game and you can add new questions by going to yourwebsite.com/zombiemath/backend and login there.<br>
+		Login Details: <br>
+		Username: admin<br>
+		Password: admin1234<br></p>	
+
+
+
+</section>
+<section id="how_to_add_admob">
+	<div class="page-header"><h3>How to add Admob</h3><hr class="notop"></div>
+<h1>
+	<strong>Steps to add Admob</strong></h1>
+<h3>
+	This Game is Compatible with AdmobAds.</h3>
+<p id="h2ix1">
+	1.Create or select a Google Account.</p>
+<p>
+	2.Go to www.admob.com and sign up an account.</p>
+<p>
+	<img alt="" src="assets/images/image_10.png" style="height: 390px; width: 630px;"></p>
+<p>
+	3.Once logged in, Click on &#39;<span class="gwt-InlineLabel MI4D5TD-q-c">Monetize New App&#39; button</span>.4.After Clicking &#39;<span class="gwt-InlineLabel MI4D5TD-q-c">Monetize New App&#39; button</span>,you will see a window like this :</p>
+<p>
+	<img alt="" src="assets/images/image_14.png" style="width: 630px; height: 386px;"></p>
+<p>
+	4.After Clicking &#39;<span class="gwt-InlineLabel MI4D5TD-q-c">Monetize New App&#39; button</span>,you will see a window like this :</p>
+<p>
+	<img alt="" src="assets/images/image_17.png" style="height: 454px; width: 630px;"></p>
+<p>
+	5.Name the App and select Platform and then click Add App.</p>
+<p>
+	<span class="K3RKQCC-lc-i K3RKQCC-lc-l">6.Select ad format and name ad unit.</span></p>
+<p>
+	<img alt="" src="assets/images/image_13.png"  ></p>
+<p>
+	<span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l">7.<span class="K3RKQCC-lc-i K3RKQCC-lc-l">Set up Firebase Analytics (optional)</span></span></span></p>
+<p>
+	<img alt="" src="assets/images/image_12.png"></p>
+<p>
+	<span class="K3RKQCC-lc-i K3RKQCC-lc-l">8.Click &#39;Done&#39;</span></p>
+<p>
+	<span class="K3RKQCC-lc-i K3RKQCC-lc-l">9.Repeat the process to add interstitial.</span></p>
+<p>
+	<span class="K3RKQCC-lc-i K3RKQCC-lc-l">10.Go to Monetize tab and select the app you have created from the left side</span></p>
+<p>
+	<span class="K3RKQCC-lc-i K3RKQCC-lc-l">11.Copy Ad Unit ID</span></p>
+<p>
+	<img alt="" src="assets/images/image_15.png"></p>
+<p>
+	<span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l">12.Open &#39;Zombie Math.caproj&#39; file and right click on the layout and select insert new object and add "AdmobAds". Once added you will see "AdmobAds" in Object types.</span></span></span></span></p>
+<p>
+	<img alt="" src="assets/images/image_11.png"></p>
+<p>
+	<span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l">13.Paste <span class="K3RKQCC-lc-i K3RKQCC-lc-l">Ad Unit ID for banner in &#39;Banner ID&#39; box or <span class="K3RKQCC-lc-i K3RKQCC-lc-l">Paste</span> <span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l">Ad Unit ID for <span class="K3RKQCC-lc-i K3RKQCC-lc-l">interstitial</span> &#39;<span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l">Interstitial</span></span></span></span></span> ID&#39; box <span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l">on the left side</span></span>.</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>
+	<img alt="" src="assets/images/image_16.png"></p>
+<p>
+	<span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l">14.Save the Project.</span></span></span></span></p>
+<p>
+	<span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l">15.<span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l">Set &#39;Test Mode&#39; to False </span></span></span></span>I</span></span></span></span><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l">f you want to export the for Android,IOS or Windows Phone.</span></span></span></span></p>
+<p>
+	<span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l">If you want to export the game for Android,<span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l">Go to this Link</span></span></span></span> :<a href="https://www.scirra.com/tutorials/4848/how-to-get-admob-official-plugin-working-on-android-crosswalk/page-3"> https://www.scirra.com/tutorials/4848/how-to-get-admob-official-plugin-working-on-android-crosswalk/page-3</a></span></span></span></span></p>
+<p>
+	<span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l">If you want to export the game for IOS,<span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"> Watch this Tutorial</span></span></span></span> : <a href="https://www.youtube.com/watch?v=dF903g4i9vo">https://www.youtube.com/watch?v=dF903g4i9vo</a></span></span></span></span></p>
+<p>
+	<span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l">If you want to export the game for Windows Phone,<span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l"><span class="K3RKQCC-lc-i K3RKQCC-lc-l">Go to this Link</span></span></span></span> :<a href="https://www.scirra.com/tutorials/429/how-to-make-a-windows-phone-8-app"> https://www.scirra.com/tutorials/429/how-to-make-a-windows-phone-8-app</a></span></span></span></span></span></span></span></span></p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+
+	</div>
+</body>
+</html>
